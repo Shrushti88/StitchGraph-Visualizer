@@ -1,14 +1,28 @@
 
 export enum StitchType {
-  CH = 'ch',   // Chain
-  SC = 'sc',   // Single Crochet
-  DC = 'dc',   // Double Crochet
-  HDC = 'hdc', // Half Double Crochet
-  TR = 'tr',   // Treble Crochet
-  SLST = 'slst', // Slip Stitch
-  INC = 'inc',  // Increase (2 sc in one)
-  DEC = 'dec',  // Decrease (2 sc together)
+  CH = 'ch',
+  SC = 'sc',
+  HDC = 'hdc',
+  DC = 'dc',
+  TR = 'tr',
+  SLST = 'slst',
+
+  // Increases
+  SC2INC = 'sc2inc',
+  SC3INC = 'sc3inc',
+  DC2INC = 'dc2inc',
+  DC3INC = 'dc3inc',
+
+  // Decreases
+  SC2TOG = 'sc2tog',
+  SC3TOG = 'sc3tog',
+  DC2TOG = 'dc2tog',
+  DC3TOG = 'dc3tog',
+
+  // Special
+  MR = 'mr',
 }
+
 
 export interface Stitch {
   id: string;
